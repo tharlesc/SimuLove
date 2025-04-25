@@ -148,6 +148,10 @@ footer {
   color: #ffffff;
 }
 
+footer .policy {
+  color: #eab3f8;
+}
+
 @media (max-width: 720px) {
 
   #sobre {
