@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,10 +10,19 @@ body {
 
 header.hero {
   background-color: #7b1fa2; 
+  font-family: "Cal Sans", sans-serif;
+  letter-spacing: 1px;
   color: #ffffff;
   text-align: center;
   padding: 2rem;
   box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+header.hero .imge {
+  height: 100px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 1px;
 }
 
 header.hero .cta {
@@ -23,12 +34,21 @@ header.hero .cta {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  animation: shake 0.8s infinite;
 }
 
 header.hero .cta:hover {
-  transform: scale(1.1);
   background-color: #b952f9; 
 }
+
+@keyframes shake {
+      0% { transform: rotate(0deg); }
+      25%  { transform: rotate(2deg); }
+      50%  { transform: rotate(0deg); }
+      75%  { transform: rotate(-2deg); }
+      100% { transform: rotate(0deg); }
+}
+
 
 section {
   padding: 2rem;
@@ -128,7 +148,12 @@ footer {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
+
+  #sobre {
+    text-align: justify;
+  }
+
   section {
     padding: 1rem;
   }
